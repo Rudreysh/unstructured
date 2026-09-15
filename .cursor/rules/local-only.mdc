@@ -1,0 +1,16 @@
+---
+description: Keep Unstructured work on this machine; never push to Unstructured-IO
+alwaysApply: true
+---
+
+# Local-only changes
+
+Do all edits, installs, and tests on this computer.
+
+- Library: `/Users/rukesh/Documents/projects/unstructured-remote` — branch `internal` or `feat/…`.
+- API: `/Users/rukesh/Documents/projects/unstructured-api` — branch `internal` or `feat/…`.
+- Clean original is `upstream/main`. Do not use a second clone.
+
+Never push to Unstructured-IO. Push custom branches to `origin` (your fork) only. Do not start Cursor cloud agents, Codespaces, or other remote VMs. Do not commit on `main`. Commit only when asked; push only when explicitly asked.
+
+`main` remains a clean mirror of Unstructured-IO. Custom work stays on `internal` or feature branches. See `GIT-WORKFLOW.md`.
